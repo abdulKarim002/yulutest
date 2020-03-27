@@ -27,7 +27,7 @@ class UserCell: UITableViewCell {
     
     func setupDataWith(source:EmployeeData) {
         titleText.text = source.employee_name
-        subtitleText.text = "Age - \(source.employee_age)"
+        subtitleText.text = "Age - \(source.employee_age ?? "-")"
     }
     
 }
